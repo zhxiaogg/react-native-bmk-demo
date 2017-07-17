@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -24,7 +25,7 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */; };
+		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
 		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
 		2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */; };
@@ -33,6 +34,24 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mapoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mapoTests.m */; };
+		3CD0FAD41F1C521700D9F8EA /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FACB1F1C521700D9F8EA /* BaiduMapAPI_Base.framework */; };
+		3CD0FAD51F1C521700D9F8EA /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FACC1F1C521700D9F8EA /* BaiduMapAPI_Cloud.framework */; };
+		3CD0FAD61F1C521700D9F8EA /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FACD1F1C521700D9F8EA /* BaiduMapAPI_Location.framework */; };
+		3CD0FAD71F1C521700D9F8EA /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FACE1F1C521700D9F8EA /* BaiduMapAPI_Map.framework */; };
+		3CD0FAD81F1C521700D9F8EA /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FACF1F1C521700D9F8EA /* BaiduMapAPI_Radar.framework */; };
+		3CD0FAD91F1C521700D9F8EA /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAD01F1C521700D9F8EA /* BaiduMapAPI_Search.framework */; };
+		3CD0FADA1F1C521700D9F8EA /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAD11F1C521700D9F8EA /* BaiduMapAPI_Utils.framework */; };
+		3CD0FADB1F1C521700D9F8EA /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAD21F1C521700D9F8EA /* libcrypto.a */; };
+		3CD0FADC1F1C521700D9F8EA /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAD31F1C521700D9F8EA /* libssl.a */; };
+		3CD0FADE1F1C522700D9F8EA /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CD0FADD1F1C522700D9F8EA /* mapapi.bundle */; };
+		3CD0FAE01F1C523100D9F8EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FADF1F1C523100D9F8EA /* QuartzCore.framework */; };
+		3CD0FAE41F1C524700D9F8EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAE11F1C524700D9F8EA /* CoreGraphics.framework */; };
+		3CD0FAE51F1C524700D9F8EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAE21F1C524700D9F8EA /* CoreLocation.framework */; };
+		3CD0FAE61F1C524700D9F8EA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAE31F1C524700D9F8EA /* CoreTelephony.framework */; };
+		3CD0FAE81F1C524E00D9F8EA /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAE71F1C524E00D9F8EA /* libstdc++.6.0.9.tbd */; };
+		3CD0FAEA1F1C525400D9F8EA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAE91F1C525400D9F8EA /* libsqlite3.0.tbd */; };
+		3CD0FAEC1F1C526F00D9F8EA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAEB1F1C526F00D9F8EA /* Security.framework */; };
+		3CD0FAEE1F1C527500D9F8EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FAED1F1C527500D9F8EA /* SystemConfiguration.framework */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		DB1C69F0C86C4AD4AC3CDA8D /* libreact-native-bmk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF8D1667B148DEA0D0AB5F /* libreact-native-bmk.a */; };
@@ -108,6 +127,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "mapo-tvOS";
+		};
+		3CD0FAB41F1C51CF00D9F8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B4CC1B131E44584928B6E9B /* react-native-bmk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CD0FA7F1F1C28D200D9F8EA;
+			remoteInfo = "react-native-bmk";
+		};
+		3CD0FAC21F1C51CF00D9F8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
+			remoteInfo = "third-party";
+		};
+		3CD0FAC41F1C51CF00D9F8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		3CD0FAC61F1C51CF00D9F8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
+			remoteInfo = "double-conversion";
+		};
+		3CD0FAC81F1C51CF00D9F8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -252,11 +306,29 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* mapo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* mapo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mapo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD0FACB1F1C521700D9F8EA /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Base.framework; path = libs/BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		3CD0FACC1F1C521700D9F8EA /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Cloud.framework; path = libs/BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
+		3CD0FACD1F1C521700D9F8EA /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Location.framework; path = libs/BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		3CD0FACE1F1C521700D9F8EA /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Map.framework; path = libs/BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		3CD0FACF1F1C521700D9F8EA /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Radar.framework; path = libs/BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
+		3CD0FAD01F1C521700D9F8EA /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Search.framework; path = libs/BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		3CD0FAD11F1C521700D9F8EA /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Utils.framework; path = libs/BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		3CD0FAD21F1C521700D9F8EA /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libs/libcrypto.a; sourceTree = "<group>"; };
+		3CD0FAD31F1C521700D9F8EA /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libs/libssl.a; sourceTree = "<group>"; };
+		3CD0FADD1F1C522700D9F8EA /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = libs/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		3CD0FADF1F1C523100D9F8EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3CD0FAE11F1C524700D9F8EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CD0FAE21F1C524700D9F8EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3CD0FAE31F1C524700D9F8EA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3CD0FAE71F1C524E00D9F8EA /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		3CD0FAE91F1C525400D9F8EA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3CD0FAEB1F1C526F00D9F8EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3CD0FAED1F1C527500D9F8EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4B4CC1B131E44584928B6E9B /* react-native-bmk.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = "react-native-bmk.xcodeproj"; path = "../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		4B4CC1B131E44584928B6E9B /* react-native-bmk.xcodeproj */ = {isa = PBXFileReference; name = "react-native-bmk.xcodeproj"; path = "../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		C6FF8D1667B148DEA0D0AB5F /* libreact-native-bmk.a */ = {isa = PBXFileReference; name = "libreact-native-bmk.a"; path = "libreact-native-bmk.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		C6FF8D1667B148DEA0D0AB5F /* libreact-native-bmk.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libreact-native-bmk.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +344,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD0FAEE1F1C527500D9F8EA /* SystemConfiguration.framework in Frameworks */,
+				3CD0FAEC1F1C526F00D9F8EA /* Security.framework in Frameworks */,
+				3CD0FAEA1F1C525400D9F8EA /* libsqlite3.0.tbd in Frameworks */,
+				3CD0FAE81F1C524E00D9F8EA /* libstdc++.6.0.9.tbd in Frameworks */,
+				3CD0FAE41F1C524700D9F8EA /* CoreGraphics.framework in Frameworks */,
+				3CD0FAE51F1C524700D9F8EA /* CoreLocation.framework in Frameworks */,
+				3CD0FAE61F1C524700D9F8EA /* CoreTelephony.framework in Frameworks */,
+				3CD0FAE01F1C523100D9F8EA /* QuartzCore.framework in Frameworks */,
+				3CD0FAD41F1C521700D9F8EA /* BaiduMapAPI_Base.framework in Frameworks */,
+				3CD0FAD51F1C521700D9F8EA /* BaiduMapAPI_Cloud.framework in Frameworks */,
+				3CD0FAD61F1C521700D9F8EA /* BaiduMapAPI_Location.framework in Frameworks */,
+				3CD0FAD71F1C521700D9F8EA /* BaiduMapAPI_Map.framework in Frameworks */,
+				3CD0FAD81F1C521700D9F8EA /* BaiduMapAPI_Radar.framework in Frameworks */,
+				3CD0FAD91F1C521700D9F8EA /* BaiduMapAPI_Search.framework in Frameworks */,
+				3CD0FADA1F1C521700D9F8EA /* BaiduMapAPI_Utils.framework in Frameworks */,
+				3CD0FADB1F1C521700D9F8EA /* libcrypto.a in Frameworks */,
+				3CD0FADC1F1C521700D9F8EA /* libssl.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -292,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */,
-				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation-tvOS.a in Frameworks */,
+				2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */,
 				2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */,
 				2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */,
 				2D02E4C51E0B4AEC006451C7 /* libRCTNetwork-tvOS.a in Frameworks */,
@@ -392,6 +481,7 @@
 		13B07FAE1A68108700A75B9A /* mapo */ = {
 			isa = PBXGroup;
 			children = (
+				3CD0FADD1F1C522700D9F8EA /* mapapi.bundle */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -414,15 +504,51 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+				3CD0FAC31F1C51CF00D9F8EA /* libthird-party.a */,
+				3CD0FAC51F1C51CF00D9F8EA /* libthird-party.a */,
+				3CD0FAC71F1C51CF00D9F8EA /* libdouble-conversion.a */,
+				3CD0FAC91F1C51CF00D9F8EA /* libdouble-conversion.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD0FAA01F1C51CF00D9F8EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0FAB51F1C51CF00D9F8EA /* libreact-native-bmk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD0FACA1F1C521300D9F8EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0FAED1F1C527500D9F8EA /* SystemConfiguration.framework */,
+				3CD0FAEB1F1C526F00D9F8EA /* Security.framework */,
+				3CD0FAE91F1C525400D9F8EA /* libsqlite3.0.tbd */,
+				3CD0FAE71F1C524E00D9F8EA /* libstdc++.6.0.9.tbd */,
+				3CD0FAE11F1C524700D9F8EA /* CoreGraphics.framework */,
+				3CD0FAE21F1C524700D9F8EA /* CoreLocation.framework */,
+				3CD0FAE31F1C524700D9F8EA /* CoreTelephony.framework */,
+				3CD0FADF1F1C523100D9F8EA /* QuartzCore.framework */,
+				3CD0FACB1F1C521700D9F8EA /* BaiduMapAPI_Base.framework */,
+				3CD0FACC1F1C521700D9F8EA /* BaiduMapAPI_Cloud.framework */,
+				3CD0FACD1F1C521700D9F8EA /* BaiduMapAPI_Location.framework */,
+				3CD0FACE1F1C521700D9F8EA /* BaiduMapAPI_Map.framework */,
+				3CD0FACF1F1C521700D9F8EA /* BaiduMapAPI_Radar.framework */,
+				3CD0FAD01F1C521700D9F8EA /* BaiduMapAPI_Search.framework */,
+				3CD0FAD11F1C521700D9F8EA /* BaiduMapAPI_Utils.framework */,
+				3CD0FAD21F1C521700D9F8EA /* libcrypto.a */,
+				3CD0FAD31F1C521700D9F8EA /* libssl.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */,
-				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */,
+				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,6 +597,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* mapoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				3CD0FACA1F1C521300D9F8EA /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -639,6 +766,10 @@
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 				},
 				{
+					ProductGroup = 3CD0FAA01F1C51CF00D9F8EA /* Products */;
+					ProjectRef = 4B4CC1B131E44584928B6E9B /* react-native-bmk.xcodeproj */;
+				},
+				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
@@ -708,6 +839,41 @@
 			fileType = archive.ar;
 			path = libReact.a;
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CD0FAB51F1C51CF00D9F8EA /* libreact-native-bmk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libreact-native-bmk.a";
+			remoteRef = 3CD0FAB41F1C51CF00D9F8EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CD0FAC31F1C51CF00D9F8EA /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 3CD0FAC21F1C51CF00D9F8EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CD0FAC51F1C51CF00D9F8EA /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = 3CD0FAC41F1C51CF00D9F8EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CD0FAC71F1C51CF00D9F8EA /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 3CD0FAC61F1C51CF00D9F8EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CD0FAC91F1C51CF00D9F8EA /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = 3CD0FAC81F1C51CF00D9F8EA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -808,10 +974,10 @@
 			remoteRef = 5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */ = {
+		5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libRCTAnimation-tvOS.a";
+			path = libRCTAnimation.a;
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -843,6 +1009,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD0FADE1F1C522700D9F8EA /* mapapi.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -967,23 +1134,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
+				);
 				INFOPLIST_FILE = mapoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapo.app/mapo";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
-				);
 			};
 			name = Debug;
 		};
@@ -992,23 +1159,23 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
+				);
 				INFOPLIST_FILE = mapoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapo.app/mapo";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
-				);
 			};
 			name = Release;
 		};
@@ -1018,19 +1185,28 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
+				);
 				INFOPLIST_FILE = mapo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnzh.mapo;
 				PRODUCT_NAME = mapo;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
-				);
 			};
 			name = Debug;
 		};
@@ -1039,19 +1215,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
+				);
 				INFOPLIST_FILE = mapo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnzh.mapo;
 				PRODUCT_NAME = mapo;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
-				);
 			};
 			name = Release;
 		};
@@ -1067,8 +1252,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
+				);
 				INFOPLIST_FILE = "mapo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1078,14 +1271,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
-				);
 			};
 			name = Debug;
 		};
@@ -1101,8 +1286,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
+				);
 				INFOPLIST_FILE = "mapo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1112,14 +1305,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-bmk/ios/react-native-bmk/react-native-bmk/**",
-				);
 			};
 			name = Release;
 		};
@@ -1136,15 +1321,15 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "mapo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.mapo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapo-tvOS.app/mapo-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 			};
 			name = Debug;
 		};
@@ -1161,15 +1346,15 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "mapo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.mapo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapo-tvOS.app/mapo-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 			};
 			name = Release;
 		};

@@ -12,13 +12,33 @@ import {
   View
 } from 'react-native';
 
-import BMKMapView from 'react-native-bmk'
+import {BMKMapView, BMKLocationService} from 'react-native-bmk'
 
 export default class mapo extends Component {
+
+  constructor(props) {
+    super(props);
+    this.locator = new BMKLocationService({
+      didUpdateBMKUserLocation: (location) => {this.onLocation(location);}
+    });
+    this.locator.startUserLocationService();
+  }
+
+  onLocation(location) {
+    // console.log(location);
+  }
+
+  componentWillUnmount() {
+    this.locator.stopUserLocationService();
+  }
+
   render() {
+    const mapOptions = {
+      showMapPoi: true,
+    };
     return (
       <View style={styles.container}>
-        <BMKMapView style={styles.map}/>
+        <BMKMapView style={styles.map} {...mapOptions}/>
       </View>
     );
   }
