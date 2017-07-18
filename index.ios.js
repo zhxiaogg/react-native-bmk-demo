@@ -18,6 +18,7 @@ export default class mapo extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {};
     this.locator = new BMKLocationService({
       didUpdateBMKUserLocation: (location) => {this.onLocation(location);}
     });
@@ -25,7 +26,7 @@ export default class mapo extends Component {
   }
 
   onLocation(location) {
-    // console.log(location);
+    this.setState({location: location});
   }
 
   componentWillUnmount() {
@@ -33,8 +34,11 @@ export default class mapo extends Component {
   }
 
   render() {
+    const {location} = this.state;
     const mapOptions = {
       showMapPoi: true,
+      showsUserLocation: true,
+      userLocation: location
     };
     return (
       <View style={styles.container}>
