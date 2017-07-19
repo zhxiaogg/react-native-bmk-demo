@@ -53,7 +53,7 @@ export default class mapo extends Component {
   render() {
     const {location, center} = this.state;
     const annotations = [{
-      title: 'hello',
+      title: 'center of map',
       identifier: '',
       coordinate: center,
       image: resolveAssetSource(require('./assets/pin.png')),
@@ -61,7 +61,7 @@ export default class mapo extends Component {
 
     const mapOptions = {
       showMapPoi: true,
-      showsUserLocation: false,
+      showsUserLocation: true,
       userLocation: location,
       annotations: annotations,
     };
