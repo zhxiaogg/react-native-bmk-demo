@@ -9,8 +9,11 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+
+const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
 import {BMKMapView, BMKLocationService} from 'react-native-bmk'
 
@@ -29,20 +32,44 @@ export default class mapo extends Component {
     this.setState({location: location});
   }
 
+  onAnnotationSelected({nativeEvent}) {
+    console.log(nativeEvent);
+  }
+
+  onRegionChange({nativeEvent}) {
+    console.log(nativeEvent);
+    const {center} = nativeEvent;
+    this.setState({center: center});
+  }
+
   componentWillUnmount() {
     this.locator.stopUserLocationService();
   }
 
+  onClickPoi({nativeEvent}) {
+    console.log(nativeEvent);
+  }
+
   render() {
-    const {location} = this.state;
+    const {location, center} = this.state;
+    const annotations = [{
+      title: 'hello',
+      identifier: '',
+      coordinate: center,
+      image: resolveAssetSource(require('./assets/pin.png')),
+    }];
+
     const mapOptions = {
       showMapPoi: true,
-      showsUserLocation: true,
-      userLocation: location
+      showsUserLocation: false,
+      userLocation: location,
+      annotations: annotations,
     };
     return (
       <View style={styles.container}>
-        <BMKMapView style={styles.map} {...mapOptions}/>
+        <BMKMapView style={styles.map}
+          onDidSelectAnnotationView={this.onAnnotationSelected.bind(this)}
+          onRegionDidChange={this.onRegionChange.bind(this)} {...mapOptions}/>
       </View>
     );
   }
