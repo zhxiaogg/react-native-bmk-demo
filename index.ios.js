@@ -15,7 +15,9 @@ import {
 
 const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
-import {BMKMapView, BMKLocationService} from 'react-native-bmk'
+import {BMKMapView, BMKLocationService, BMKMapManager} from 'react-native-bmk'
+
+new BMKMapManager().initialize('Iq3K32micmLiXv4kwnSma6ILRkpIBtt4');
 
 export default class mapo extends Component {
 
