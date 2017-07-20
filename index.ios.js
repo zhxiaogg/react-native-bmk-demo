@@ -15,7 +15,7 @@ import {
 
 const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
-import {BMKMapView, BMKLocationService, BMKMapManager} from 'react-native-bmk'
+import {BMKMapView, BMKLocationService, BMKMapManager, POISearch} from 'react-native-bmk'
 
 new BMKMapManager().initialize('Iq3K32micmLiXv4kwnSma6ILRkpIBtt4');
 
@@ -38,11 +38,31 @@ export default class mapo extends Component {
     console.log(nativeEvent);
   }
 
-  onRegionChange({nativeEvent}) {
-    console.log(nativeEvent);
-    const {center} = nativeEvent;
+  onRegionChange({nativeEvent: {center}}) {
+    POISearch.searchNearBy({
+      location: center,
+      radius: 300,
+      keyword: '酒店'
+    });
     this.setState({center: center});
   }
+
+  componentDidMount() {
+    POISearch.onSuccess(({poiInfoList}) => {
+      if(poiInfoList) {
+        const annotations = poiInfoList.map((poi) => {return {
+          title: poi.name,
+          coordinate: poi.pt,
+          identifier: poi.uid,
+          image: resolveAssetSource(require('./assets/pin.png')),
+        };});
+        this.setState({annotations: annotations});
+      }
+    });
+    POISearch.onFailed((b) => {console.log(b);});
+  }
+
+
 
   componentWillUnmount() {
     this.locator.stopUserLocationService();
@@ -53,13 +73,7 @@ export default class mapo extends Component {
   }
 
   render() {
-    const {location, center} = this.state;
-    const annotations = [{
-      title: 'center of map',
-      identifier: '',
-      coordinate: center,
-      image: resolveAssetSource(require('./assets/pin.png')),
-    }];
+    const {location, center, annotations} = this.state;
 
     const mapOptions = {
       showMapPoi: true,
